@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <h1 class="heading">
+            Event Countdown Timer
+        </h1>
+    </nav>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="date" id="date-picker" class="picker"></td>
+                <td><input type="time" id="time-picker" class="picker"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button id="start"><i class="fa fa-solid fa-play button"></i></button>
+    <button id="reset"><i class="fa fa-solid fa-rotate-left button"></i></button>
+    <button id="stop"><i class="fa fa-solid fa-ban button"></i></button>
+
+    <div class="time">
+        <div>
+            <p class="time_heading">DAYS</p>
+            <div class="number" id="days">0</div>
+        </div>
+        <div>
+            <p class="time_heading">HOURS</p>
+            <div class="number" id="hours">0</div>
+        </div>
+        <div>
+            <p class="time_heading">MINUTES</p>
+            <div class="number" id="minutes">0</div>
+        </div>
+        <div>
+            <p class="time_heading">SECONDS</p>
+            <div class="number" id="seconds">0</div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
